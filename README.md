@@ -38,8 +38,8 @@ Ce projet a été bâti avec une stack moderne pour garantir performance et desi
 
 ## Architecture du projet :
 
+<img width="233" height="481" alt="image" src="https://github.com/user-attachments/assets/8643c7f4-2773-4956-8f4b-80ddf9554a94" />
 
-<img width="232" height="488" alt="image" src="https://github.com/user-attachments/assets/3ff71b8b-3324-4ce6-adda-ddcb7f425081" />
-
+<img width="231" height="498" alt="image" src="https://github.com/user-attachments/assets/c50867b8-beb4-4d86-a328-876c29ff8a71" />
 
 
