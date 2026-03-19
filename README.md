@@ -1,73 +1,46 @@
-# React + TypeScript + Vite
+#  Portfolio Professionnel - Rayan Sedaoui
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenue sur le dépôt GitHub de mon portfolio personnel, réalisé dans le cadre du **TP9 REACT**. 
+Ce projet présente mon parcours académique, mes compétences en développement Full-Stack et mes réalisations.
 
-Currently, two official plugins are available:
+##  À propos de moi
+* **Nom :** Rayan Sedaoui
+* **Formation :** Licence SIR (Systèmes Informatiques Répartis) & DEUST MIPC
+* **Établissement :** Faculté des Sciences et Techniques (FST), Marrakech
+* **Objectif :** Développeur Full-Stack (Laravel, Spring Boot, React)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+##  Technologies utilisées
+Ce projet a été bâti avec une stack moderne pour garantir performance et design :
+* **Frontend :** [React.js](https://reactjs.org/) avec [Vite](https://vitejs.dev/)
+* **Langage :** [TypeScript](https://www.typescriptlang.org/) (pour un code robuste et typé)
+* **Design :** [Tailwind CSS](https://tailwindcss.com/) & [Shadcn/ui](https://ui.shadcn.com/)
+* **Icônes :** [Lucide React](https://lucide.dev/)
+* **Déploiement :** [Vercel](https://vercel.com/)
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Structure du projet
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+<img width="752" height="439" alt="image" src="https://github.com/user-attachments/assets/09ca9e61-baae-40d0-86f2-a4877cf4788a" />
+<img width="959" height="475" alt="image" src="https://github.com/user-attachments/assets/a32e5729-b04a-4141-a449-aa2909f25890" />
+<img width="959" height="356" alt="image" src="https://github.com/user-attachments/assets/b8aa0669-0c28-4d53-aab0-ba5bbe158f7f" />
+<img width="959" height="439" alt="image" src="https://github.com/user-attachments/assets/8c10a841-c59c-4ce2-969a-409292952ca1" />
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+<img width="959" height="440" alt="image" src="https://github.com/user-attachments/assets/a3cbda47-261c-497e-8073-1bd7a13dc3c6" />
+<img width="958" height="440" alt="image" src="https://github.com/user-attachments/assets/ad2f5274-04b4-4b87-b98a-d32e2e6ac4cb" />
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Architecture du projet :
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+<img width="232" height="488" alt="image" src="https://github.com/user-attachments/assets/3ff71b8b-3324-4ce6-adda-ddcb7f425081" />
+
+
+
+##  Installation locale
+Si vous souhaitez cloner ce projet et l'exécuter sur votre machine :
+
+1. **Cloner le dépôt :**
+   ```bash
+   git clone [https://github.com/rayan-sedaoui/TP9_REACT.git](https://github.com/rayan-sedaoui/TP9_REACT.git)
