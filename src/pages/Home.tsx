@@ -39,23 +39,28 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div className="p-6 border rounded-2xl bg-card">
-          <div className="text-primary mb-2"><MapPin /></div>
-          <h4 className="font-semibold text-sm text-muted-foreground uppercase">Localisation</h4>
-          <p className="text-lg font-bold">{personal.location}</p>
-        </div>
-        <div className="p-6 border rounded-2xl bg-card">
-          <div className="text-primary mb-2"><GraduationCap /></div>
-          <h4 className="font-semibold text-sm text-muted-foreground uppercase">Formation</h4>
-          <p className="text-lg font-bold">Licence SIR</p>
-        </div>
-        <div className="p-6 border rounded-2xl bg-card">
-          <div className="text-primary mb-2"><Target /></div>
-          <h4 className="font-semibold text-sm text-muted-foreground uppercase">Objectif</h4>
-          <p className="text-lg font-bold">Stage / Opportunité Full-Stack</p>
-        </div>
-      </section>
+{/* Section Certifications - Version Mobile Friendly */}
+<section className="py-12 px-4">
+  <h2 className="text-2xl font-bold mb-6 text-center md:text-left">Mes Certifications</h2>
+
+  {/* Le secret est ici : grid-cols-1 pour mobile, grid-cols-2 pour tablette/PC */}
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+    {portfolioData.certifications.map((cert) => (
+      <div key={cert.id} className="p-4 border rounded-xl bg-card shadow-sm hover:shadow-md transition-shadow">
+        <h3 className="font-bold text-lg">{cert.name}</h3>
+        <p className="text-sm text-muted-foreground">{cert.issuer} • {cert.date}</p>
+        <a
+          href={cert.verifyUrl}
+          target="_blank"
+          className="text-primary text-sm mt-2 inline-block hover:underline"
+        >
+          Vérifier le certificat →
+        </a>
+      </div>
+    ))}
+  </div>
+</section>
+
     </div>
   );
 }
