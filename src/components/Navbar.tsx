@@ -1,12 +1,10 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import { Button } from "./ui/button";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  // J'ai repris les noms exacts de ton image
   const navItems = [
     { name: "Projets", path: "/projects" },
     { name: "Parcours", path: "/" },
@@ -20,7 +18,7 @@ export function Navbar() {
       <div className="container flex h-16 items-center justify-between px-4">
         <Link to="/" className="font-bold text-xl">MonPortfolio</Link>
 
-        {/* MENU PC (Caché sur mobile) */}
+        {/* MENU PC (Visible sur grand écran, caché sur mobile) */}
         <div className="hidden md:flex items-center gap-6">
           {navItems.map((item) => (
             <Link key={item.name} to={item.path} className="text-sm font-medium hover:text-primary">
@@ -29,23 +27,23 @@ export function Navbar() {
           ))}
         </div>
 
-        {/* BOUTON MENU MOBILE (Hamburger) */}
-        <div className="flex md:hidden items-center">
-          <Button variant="ghost" size="icon" onClick={() => setIsOpen(!isOpen)}>
+        {/* MENU MOBILE (Caché sur PC, visible sur téléphone) */}
+        <div className="md:hidden flex items-center">
+          <button onClick={() => setIsOpen(!isOpen)} className="p-2">
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </Button>
+          </button>
         </div>
       </div>
 
-      {/* MENU DÉROULANT MOBILE (S'affiche quand on clique sur le bouton) */}
+      {/* LISTE DÉROULANTE MOBILE */}
       {isOpen && (
-        <div className="md:hidden border-t bg-background px-4 py-4 flex flex-col gap-4 shadow-lg">
+        <div className="md:hidden border-t px-4 py-4 flex flex-col gap-4 bg-background">
           {navItems.map((item) => (
             <Link
               key={item.name}
               to={item.path}
               className="text-base font-medium hover:text-primary"
-              onClick={() => setIsOpen(false)} // Ferme le menu au clic
+              onClick={() => setIsOpen(false)}
             >
               {item.name}
             </Link>
