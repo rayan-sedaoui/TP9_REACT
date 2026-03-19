@@ -181,4 +181,29 @@
     right: 0;
     border-right-color: var(--border);
   }
+  /* =========================================
+     MEDIA QUERIES (Adaptation pour téléphone)
+     ========================================= */
+
+  /* 1. Pour les écrans de téléphone (moins de 768px de large) */
+  @media (max-width: 768px) {
+    .menu-ordinateur {
+      display: none !important; /* On cache le menu texte */
+    }
+
+    .bouton-menu-mobile {
+      display: flex !important; /* On affiche le bouton 3 barres */
+    }
+  }
+
+  /* 2. Pour les ordinateurs et tablettes (plus de 768px de large) */
+  @media (min-width: 769px) {
+    .menu-ordinateur {
+      display: flex !important; /* On affiche le menu texte */
+    }
+
+    .bouton-menu-mobile {
+      display: none !important; /* On cache le bouton 3 barres */
+    }
+  }
 }

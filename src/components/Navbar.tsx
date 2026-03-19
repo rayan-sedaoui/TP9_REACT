@@ -18,8 +18,8 @@ export function Navbar() {
       <div className="container flex h-16 items-center justify-between px-4">
         <Link to="/" className="font-bold text-xl">MonPortfolio</Link>
 
-        {/* MENU PC (Visible sur grand écran, caché sur mobile) */}
-        <div className="hidden md:flex items-center gap-6">
+        {/* MENU ORDINATEUR (Géré par la Media Query CSS) */}
+        <div className="menu-ordinateur items-center gap-6">
           {navItems.map((item) => (
             <Link key={item.name} to={item.path} className="text-sm font-medium hover:text-primary">
               {item.name}
@@ -27,8 +27,8 @@ export function Navbar() {
           ))}
         </div>
 
-        {/* MENU MOBILE (Caché sur PC, visible sur téléphone) */}
-        <div className="md:hidden flex items-center">
+        {/* BOUTON MOBILE (Géré par la Media Query CSS) */}
+        <div className="bouton-menu-mobile items-center">
           <button onClick={() => setIsOpen(!isOpen)} className="p-2">
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
@@ -37,7 +37,7 @@ export function Navbar() {
 
       {/* LISTE DÉROULANTE MOBILE */}
       {isOpen && (
-        <div className="md:hidden border-t px-4 py-4 flex flex-col gap-4 bg-background">
+        <div className="border-t px-4 py-4 flex flex-col gap-4 bg-background bouton-menu-mobile">
           {navItems.map((item) => (
             <Link
               key={item.name}
