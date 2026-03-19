@@ -3,6 +3,11 @@
 Bienvenue sur le dépôt GitHub de mon portfolio personnel, réalisé dans le cadre du **TP9 REACT**. 
 Ce projet présente mon parcours académique, mes compétences en développement Full-Stack et mes réalisations.
 
+
+## Lien du mon portfolio
+
+https://mon-portfolio-xi-one.vercel.app/
+
 ##  À propos de moi
 * **Nom :** Rayan Sedaoui
 * **Formation :** Licence SIR (Systèmes Informatiques Répartis) & DEUST MIPC
