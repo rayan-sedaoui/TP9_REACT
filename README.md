@@ -38,9 +38,3 @@ Ce projet a été bâti avec une stack moderne pour garantir performance et desi
 
 
 
-##  Installation locale
-Si vous souhaitez cloner ce projet et l'exécuter sur votre machine :
-
-1. **Cloner le dépôt :**
-   ```bash
-   git clone [https://github.com/rayan-sedaoui/TP9_REACT.git](https://github.com/rayan-sedaoui/TP9_REACT.git)
