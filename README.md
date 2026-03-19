@@ -6,7 +6,7 @@ Ce projet présente mon parcours académique, mes compétences en développement
 
 ## Lien du mon portfolio
 
-https://mon-portfolio-xi-one.vercel.app/
+https://mon-portfolio-xi-one.vercel.app
 
 ##  À propos de moi
 * **Nom :** Rayan Sedaoui
@@ -26,7 +26,8 @@ Ce projet a été bâti avec une stack moderne pour garantir performance et desi
 ## Structure du projet
 
 
-<img width="752" height="439" alt="image" src="https://github.com/user-attachments/assets/09ca9e61-baae-40d0-86f2-a4877cf4788a" />
+<img width="482" height="441" alt="image" src="https://github.com/user-attachments/assets/311b6ae8-729d-401e-9d49-2da1536c0413" />
+
 <img width="959" height="475" alt="image" src="https://github.com/user-attachments/assets/a32e5729-b04a-4141-a449-aa2909f25890" />
 <img width="959" height="356" alt="image" src="https://github.com/user-attachments/assets/b8aa0669-0c28-4d53-aab0-ba5bbe158f7f" />
 <img width="959" height="439" alt="image" src="https://github.com/user-attachments/assets/8c10a841-c59c-4ce2-969a-409292952ca1" />
