@@ -6,7 +6,7 @@ Ce projet présente mon parcours académique, mes compétences en développement
 
 ## Lien du mon portfolio
 
-https://rayan-sedaoui.github.io/TP9_REACT/
+https://rayan-sedaoui.github.io/TP9_REACT
 
 
 ##  À propos de moi
