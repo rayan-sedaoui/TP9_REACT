@@ -8,21 +8,30 @@ export default function RootLayout() {
   return (
     <div className="min-h-dvh bg-background text-foreground">
       <header className="sticky top-0 border-b backdrop-blur z-50">
-        <nav className="mx-auto max-w-6xl flex items-center justify-between p-4">
-          <NavLink to="/" className="font-bold text-lg">MonPortfolio</NavLink>
-          <div className="flex items-center gap-6"> {/* Ajout de gap et div pour regrouper */}
-            <div className="hidden md:flex items-center gap-4 text-sm font-medium">
-              <NavLink to="/projects" className="hover:text-primary">Projets</NavLink>
-              <NavLink to="/experience" className="hover:text-primary">Parcours</NavLink>
-              <NavLink to="/education" className="hover:text-primary">Formations</NavLink>
-              <NavLink to="/certifications" className="hover:text-primary">Certifications</NavLink>
-              <NavLink to="/contact" className="hover:text-primary">Contact</NavLink>
-            </div>
-
-            {/* Le bouton magique */}
+        <nav className="mx-auto max-w-6xl flex flex-col md:flex-row items-center justify-between p-4 gap-4">
+          <div className="flex w-full justify-between items-center md:w-auto">
+            <NavLink to="/" className="font-bold text-lg">MonPortfolio</NavLink>
             <Button
               variant="ghost"
               size="sm"
+              className="md:hidden"
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            >
+              {theme === "dark" ? "🌙" : "☀️"}
+            </Button>
+          </div>
+
+          <div className="flex flex-wrap justify-center items-center gap-x-4 gap-y-2 text-sm font-medium w-full md:w-auto">
+            <NavLink to="/projects" className="hover:text-primary">Projets</NavLink>
+            <NavLink to="/experience" className="hover:text-primary">Parcours</NavLink>
+            <NavLink to="/education" className="hover:text-primary">Formations</NavLink>
+            <NavLink to="/certifications" className="hover:text-primary">Certifications</NavLink>
+            <NavLink to="/contact" className="hover:text-primary">Contact</NavLink>
+
+            <Button
+              variant="ghost"
+              size="sm"
+              className="hidden md:flex ml-2"
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             >
               {theme === "dark" ? "🌙" : "☀️"}
@@ -35,8 +44,7 @@ export default function RootLayout() {
         <Outlet />
       </main>
 
-      <footer className="border-t py-6 text-center text-sm text-muted-foreground mt-auto">
-        © {new Date().getFullYear()} • Mon Nom
+      <footer className="border-t py-6 text-center text-sm text-muted-foreground mt-auto hidden">
       </footer>
     </div>
   );
