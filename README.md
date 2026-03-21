@@ -6,7 +6,8 @@ Ce projet présente mon parcours académique, mes compétences en développement
 
 ## Lien du mon portfolio
 
-https://mon-portfolio-xi-one.vercel.app
+https://rayan-sedaoui.github.io/TP9_REACT/
+
 
 ##  À propos de moi
 * **Nom :** Rayan Sedaoui
